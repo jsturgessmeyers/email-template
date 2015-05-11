@@ -1,0 +1,32 @@
+<!--===FOOTER===-->
+<table align="center" width="<%= current_page.data.table_width %>" id="footer-table" class="fixed-table" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td class="remove-pad" align="center" valign="top">
+      <table align="center" width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="remove-pad" valign="top" style="padding-bottom:20px;">
+            <table align="center" bgcolor="#<%= current_page.data.ftr_color %>" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="disclosure" align="center" valign="top" bgcolor="#<%= current_page.data.ftr_color %>" style="color:#000001; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; -webkit-text-size-adjust:none; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px;">
+                <span class="ios-links-black">*Offer expires %%=Format(DateAdd(Now(), "<%= current_page.data.expDays %>","D"), "MM/dd/yyyy")=%%. Certain restrictions apply. <a href="<%= current_page.data.promo_url %>" target="_blank" style="text-decoration: none;"><span style="text-decoration: underline; color:#000001;">Go here</span></a> or <a href="tel:<%= current_page.data.pub_phone %>" target="_blank" style="text-decoration: none;"><span style=" color:#000001;">call</span></a> for more details.</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="unsub" align="center" valign="top" bgcolor="#<%= current_page.data.ftr_color %>" style="color:#000001; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; -webkit-text-size-adjust:none; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px;">
+                You are currently subscribed as: <a href="#" style="color:#000001; text-decoration:none; font-weight:bold;">%%emailaddr%%.</a>
+                <br />To unsubscribe from future circulation promotions from
+                <br />%%Member_Busname%%, <a name="unsub" href="http://pages.exacttarget.com/unsubscribePage?MID=%%memberid%%&ListID=%%listId%%&SubscriberID=%%subscriberID%%&ji=%%jobid%%&sk=%%_subscriberKey%%" title="unsubscribe from future offers" style="color:#000001">visit the following web page</a>.
+                </td>
+              </tr>
+              <tr>
+                <td class="address" align="center" valign="top" bgcolor="#<%= current_page.data.ftr_color %>" style="color:#000001; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; -webkit-text-size-adjust:none; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px;"><span class="ios-links-black">%%Member_Addr%% | %%Member_City%%, %%Member_State%% | %%Member_PostalCode%% | %%Member_Country%%</span><br />&copy; <b>%%Member_Busname%%</b>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--===END FOOTER===-->

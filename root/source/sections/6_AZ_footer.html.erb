@@ -1,0 +1,35 @@
+<!--===AZCENTRAL FOOTER===-->
+<table align="center" width="<%= current_page.data.table_width %>" id="footer-table" class="fixed-table" cellpadding="0" cellspacing="0" border="0">
+  <tr>
+    <td class="remove-pad" align="center" valign="top">
+      <table align="center" width="<%= current_page.data.nested_width %>" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td class="remove-pad" valign="top" style="padding-bottom:20px;">
+            <table align="center" bgcolor="#<%= current_page.data.ftr_color %>" width="100%" cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td class="disclosure" align="center" valign="top" bgcolor="#<%= current_page.data.ftr_color %>" style="color:#000001; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; -webkit-text-size-adjust:none; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px;">
+                <span class="ios-links-black">*Offer expires %%=Format(DateAdd(Now(), "<%= current_page.data.expDays %>","D"), "MM/dd/yyyy")=%%. Certain restrictions apply. <a href="<%= current_page.data.promo_url %>" target="_blank" style="text-decoration: none;"><span style="text-decoration: underline; color:#000001;">Go here</span></a> or <a href="tel:<%= current_page.data.pub_phone %>" target="_blank" style="text-decoration: none;"><span style=" color:#000001;">call</span></a> for more details.</span>
+                </td>
+              </tr>
+              <tr>
+                <td class="unsub" align="center" valign="top" bgcolor="#<%= current_page.data.ftr_color %>" style="color:#000001; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; -webkit-text-size-adjust:none; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px;">
+                UNSUBSCRIBE: If you would like to be removed from our exclusive offer mailing list, <a href="http://www.azcentral.com/circulation/unsubscribes.php" target="_blank" style="color:#000001;">unsubscribe&nbsp;here</a>.
+                <br /><br />
+                TO ENSURE CONTINUED DELIVERY of e-mail exclusive offers to your inbox, be sure to add <a href="#" style="color:#000001; text-decoration:none;">azcentral@azcentral.com</a> to your e-mail address book or contact list.
+                </td>
+              </tr>
+              <tr>
+                <td class="address" align="center" valign="top" bgcolor="#<%= current_page.data.ftr_color %>" style="color:#000001; font-family:Arial, Helvetica, sans-serif; font-size:10px; line-height:14px; -webkit-text-size-adjust:none; padding-top:10px; padding-right:10px; padding-bottom:10px; padding-left:10px;">
+                <span class="ios-links-black">&copy; 1999-%%=Datepart(Now(),"year")=%% %%Member_Busname%%/azcentral.com -  %%Member_Addr%%  -  %%Member_City%%,  %%Member_State%%,  %%Member_PostalCode%%, %%Member_Country%%<br />
+                All rights reserved.</span>
+                <custom name="opencounter" type="tracking">
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!--===/AZCENTRAL FOOTER===-->
