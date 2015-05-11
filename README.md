@@ -1,1 +1,1 @@
-# grunt-email-template
+# email-template
