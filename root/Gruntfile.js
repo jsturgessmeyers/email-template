@@ -60,5 +60,6 @@ grunt.loadNpmTasks('grunt-prettify');
 grunt.loadNpmTasks('grunt-node-text-converter');
 grunt.loadNpmTasks('grunt-execute');
 grunt.loadNpmTasks('grunt-special-html');
+grunt.loadNpmTasks('grunt-phantomjs-screenshot');
 grunt.registerTask('default', ['middleman', 'prettify', 'execute', 'special-html', 'phantomjs_screenshot']);
 };
