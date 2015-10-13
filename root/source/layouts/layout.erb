@@ -59,19 +59,19 @@
     }
     </style>
   </head>
-  <body bgcolor="#<%= current_page.data.outer_color %>" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin:0; padding:0; -webkit-font-smoothing:antialiased; width:100% !important; font-family:Arial,Helvetica,sans-serif; background:#<%= current_page.data.outer_color %>;">
+  <body <%= current_page.data.outer_color %> leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" style="margin:0; padding:0; -webkit-font-smoothing:antialiased; width:100% !important; font-family:Arial,Helvetica,sans-serif; background:#<%= current_page.data.outer_color %>;">
     <table align="center" width="100%" cellpadding="0" cellspacing="0" border="0" style="table-layout: fixed;">
       <tr>
-        <td align="center" valign="top" bgcolor="#<%= current_page.data.outer_color %>">
+        <td align="center" valign="top" <%= current_page.data.outer_color %>>
           <!--===OUTMOST CONTAINER===-->
-          <table bgcolor="#<%= current_page.data.outer_color %>" class="fixed-table" align="center" width="<%= current_page.data.container_width %>" cellpadding="0" cellspacing="0" border="0">
+          <table <%= current_page.data.outer_color %> class="fixed-table" align="center" width="<%= current_page.data.container_width %>" cellpadding="0" cellspacing="0" border="0">
             <tr>
               <td class="remove-pad" valign="top" align="center" style="padding-top:20px; padding-bottom:20px;">
                 <center>
                 <!--===FIXED-WIDTH CONTAINER===-->
-                <table id="container" class="fixed-table" align="center" width="<%= current_page.data.container_width %>" cellpadding="0" cellspacing="0" border="0" bgcolor="#<%= current_page.data.inner_color %>">
+                <table id="container" class="fixed-table" align="center" width="<%= current_page.data.container_width %>" cellpadding="0" cellspacing="0" border="0" <%= current_page.data.inner_color %>>
                   <tr>
-                    <td valign="top" align="center" bgcolor="#<%= current_page.data.inner_color %>">
+                    <td valign="top" align="center" <%= current_page.data.inner_color %>>
                       <%= yield %>
                     </td>
                   </tr>
