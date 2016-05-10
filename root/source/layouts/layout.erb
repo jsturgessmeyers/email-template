@@ -15,7 +15,7 @@
     font-weight: inherit !important;
     line-height: inherit !important;
     }
-    @media only screen and (max-width: 414px) {
+    @media only screen and (max-width: <%= current_page.data.mq_width %>px) {
     table[class="fixed-table"] {
     width: 100% !important;
     }
